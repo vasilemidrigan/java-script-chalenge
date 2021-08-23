@@ -77,3 +77,86 @@ console.log('Coding challenge #4: Print all the multiplication tables with numbe
 console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
 console.log('xxxxxxx S  O  L  V  E  D xxxxxxxxx');
 console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+
+
+//Coding challenge #5: Calculate the sum of numbers from 1 to 10
+let sumOneToTen = 0;
+for(let i = 1; i <= 10; i++) {
+  sumOneToTen += i;
+}
+console.log(`The sum of numbers from 1 to 10 is: ${sumOneToTen}`);
+ 
+console.log('Coding challenge #5: Calculate the sum of numbers from 1 to 10');
+console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+console.log('xxxxxxx S  O  L  V  E  D xxxxxxxxx');
+console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+
+
+//  Coding challenge #6: Calculate 10!
+//  Don't really understood what it mean by calculate 10, so I skiped this step.
+
+//  Coding challenge #7: Calculate the sum of odd numbers greater than 10 and less than 30
+
+const odd = [];
+const sum = (accumulator, currentValue) => accumulator + currentValue;
+
+for(let i = 10; i <= 30; i++) {
+  if(i % 2 === 1) {
+    odd.push(i);
+  }
+}
+
+const sumOddNrs = odd.reduce(sum);
+console.log(`The sum of odd numbers from 10 to 30 is - ${sumOddNrs}`);
+
+
+console.log('Coding challenge #7: Calculate the sum of odd numbers greater than 10 and less than 30');
+console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+console.log('xxxxxxx S  O  L  V  E  D xxxxxxxxx');
+console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+
+
+// Coding challenge #8: Create a function that will convert from Celsius to Fahrenheit
+
+const celsiusToFahrenheit = (celsiusValue) => {
+  return (celsiusValue * (9 / 5)) + 32;
+}
+
+celsiusToFahrenheit(30); 
+
+console.log('Coding challenge #8: Create a function that will convert from Celsius to Fahrenheit');
+console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+console.log('xxxxxxx S  O  L  V  E  D xxxxxxxxx');
+console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+
+
+//Coding challenge #9: Create a function that will convert from Fahrenheit to Celsius
+
+const fahrToCelsius = (fahrValue) => {
+  return (fahrValue - 32) * (5 / 9);
+}
+
+console.log(fahrToCelsius(10));
+
+console.log('Coding challenge #9: Create a function that will convert from Fahrenheit to Celsius');
+console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+console.log('xxxxxxx S  O  L  V  E  D xxxxxxxxx');
+console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+
+
+//Coding challenge #10: Calculate the sum of numbers in an array of numbers
+
+const arrOfNum = [3, 7, 2.3, 8];
+let sumArr = 0;
+
+for (let i = 0; i <= arrOfNum.length - 1; i++) {
+  sumArr += arrOfNum[i]
+}
+
+console.log(sumArr); // 20.3
+
+console.log('Coding challenge #10: Calculate the sum of numbers in an array of numbers');
+console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+console.log('xxxxxxx S  O  L  V  E  D xxxxxxxxx');
+console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+
